@@ -10,6 +10,7 @@ for key in theBoard:
 
 # printanje table
 
+
 def printBoard(board):
     print(board['7'] + '|' + board['8'] + '|' + board['9'])
     print('-+-+-')
@@ -19,12 +20,14 @@ def printBoard(board):
 
 # Glavna funkcija igrice
 
+
 def igrica():
 
     turn = 'X'
     count = 0
     
 # mesto je input korisnika koji bira poziciju 
+
   
     for i in range(10):
         printBoard(theBoard)
@@ -47,6 +50,7 @@ def igrica():
             continue
             
         # funkcija ispod cisti output i printa samo jednu tablu za igru
+        
 
         from IPython.display import clear_output
         clear_output(wait=True)
